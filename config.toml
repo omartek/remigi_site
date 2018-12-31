@@ -1,6 +1,6 @@
 # Site settings
 baseurl = "https://marcelloremigi.netlify.com"
-languageCode = "en-it"
+languageCode = "it-it"
 title = "Highlights"
 theme = "hugo-highlights-theme"
 
