@@ -1,0 +1,139 @@
+# Site settings
+baseurl = "https://www.marcelloremigi.com"
+languageCode = "en-it"
+title = "Highlights"
+theme = "hugo-highlights-theme"
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = ""
+
+[params]
+
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
+
+  # To provide more meta data for search engings feel free to add a few informations.
+  # This lines will be inserted as meta tags.
+  name = "Marcello Remigi"
+  description = "Artista contemporaneo"
+
+  # For a static site it's not possible to provide a contact form. The contact form uses
+  # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+  # Visitors can send up to a 1000 emails each month
+  #
+  # How to setup formspree
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email to yourself to confirm your account
+  # - click the confirmation link in the email from www.formspree.io
+  # - That's all. Enjoy mailing!
+  email = "doremi@gmail.com"
+
+  # If this param is set to true, every section gets an own background image (located at static/images)
+  # to change the image you could use the param picture on every section.
+  # If it's disabled you could change the background to overwrite the bg.jpg and overlay.png to set the background.
+  backgroundpersection = true
+
+  # hero Section
+  [params.hero]
+    type = "hero"
+    title = "Marcello Remigi"
+    description = "un artista contemporaneo"
+    buttontext = "inizia"
+
+  # about section
+  [[params.block]]
+    id = "about"
+    type = "text"
+    title = "Chi sono"
+    description = "Musicista e docente di strumento di professione, dipingo per passione fin da giovanissimo. Nel corso della mia vita artistica mi sono cimentato con differenti stili e tecniche."
+    buttontext = "next"
+    # the picture is stored at static/images/
+    picture = "pavone-raganella.jpg"
+
+  # skill section
+  [[params.block]]
+    id = "skills"
+    type = "list"
+    title = "Cosa faccio"
+    description = "Attualmente prediligo effettuare lavori che prevedano l'impiego di olio su acrilico. La mia raccolta di dipinti attuali comprende per lo più soggetti di animali che vengono dipinti su fondi astratti e molto contemporanei, ma non disdegno incursioni anche negli stili sia del surrealismo che in quello che potremmo definire 'forte realismo' combinato con un sentimento struggente un po' alla maniera di Hopper."
+    buttontext = "next"
+    # the picture is stored at static/images/
+    picture = "musicanti-brema-coccinella.jpg"
+
+  # infos section
+  [[params.block]]
+    id = "info"
+    type = "text"
+    title = "Rassegne e appuntamenti"
+    description = "[IL carnevale degli animali - giugno 2017] (http://www.nembro.net/news-e-iniziative/novita/Il-carnevale-degli-animali/)"
+    # the picture is stored at static/images/
+    picture = "farfalla-bianca-pesce.jpg"
+
+#  # custom section
+#  [[params.block]]
+#    id = "important"
+#    # to make custom section copy <theme>/layouts/partials/text.html to /layouts/partials/custom.html and edit it according to your needs.
+#    type = "custom"
+#    title = "Don't forget"
+#    description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
+#    # the picture is stored at static/images/
+#    picture = "pic04.jpg"
+
+  # contact form
+  [[params.block]]
+    id = "contact"
+    type = "contact"
+    title = "Contatti"
+    picture = "moto-vespa-collage.jpg"
+
+    [params.block.form]
+      name = "Nome"
+      email = "la tua mail"
+      message = "scrivi qui il messaggio"
+      buttontext = "invia"
+
+  # footer section
+  # this section includes last block and social icons
+
+  [params.footer]
+    enable = true
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Twitter"
+        icon = "fa-twitter"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Facebook"
+        icon = "fa-facebook"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Instagramm"
+        icon = "fa-instagram"
+        link = "#"
+
+      [[params.footer.social]]
+        title = "Email"
+        icon = "fa-envelope"
+        link = "#"
+
+    # copyright
+    #[params.footer.copyright.notice]
+
+      [[params.footer.copyright.notice]]
+        text = "© MarcelloRemigi"
+
+      [[params.footer.copyright.notice]]
+        text = "Design: [HTML5UP](//html5up.net)"
+
+#     [[params.footer.copyright.notice]]
+#       text = "Demo Images: [Unsplash](//unsplash.com/)"
